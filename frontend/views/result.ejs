@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Submission Result</title>
+</head>
+<body style="font-family: Arial, sans-serif; padding: 2rem;">
+  <h2>Response from Backend</h2>
+  <p><strong>Status:</strong> <%= data.status %></p>
+  <p><strong>Message:</strong> <%= data.message %></p>
+  <% if (data.received_data) { %>
+    <h3>Submitted Details:</h3>
+    <ul>
+      <li>Name: <%= data.received_data.name %></li>
+      <li>Email: <%= data.received_data.email %></li>
+      <li>Message: <%= data.received_data.message %></li>
+    </ul>
+  <% } %>
+  <br>
+  <a href="/">Go Back</a>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Docker Full-Stack Form</title>
+</head>
+<body style="font-family: Arial, sans-serif; padding: 2rem;">
+  <h2>Contact / Feedback Form</h2>
+  <form action="/submit" method="POST">
+    <div>
+      <label>Name:</label><br>
+      <input type="text" name="name" required><br><br>
+    </div>
+    <div>
+      <label>Email:</label><br>
+      <input type="email" name="email" required><br><br>
+    </div>
+    <div>
+      <label>Message:</label><br>
+      <textarea name="message" rows="4" cols="30" required></textarea><br><br>
+    </div>
+    <button type="submit">Send to Flask Backend</button>
+  </form>
+</body>
+</html>
